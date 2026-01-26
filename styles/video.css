@@ -1,0 +1,133 @@
+
+    
+    .thumbnail{
+      width: 100%;
+    }
+
+    .video-title{
+      margin-top: 0px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-family: Roboto, Arial;
+      color: black;
+    }
+
+    .video-author{
+      font-size: 12px;
+      color: rgb(96, 96, 96);
+      margin-bottom: 4px;
+    }
+
+    .video-stats{
+      font-size: 12px;
+      color: rgb(96, 96, 96);
+    }
+
+    .video-info-grid{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+
+    .channel-pic{
+      position: relative;
+    }
+
+    .profile-pic-container:hover .channel-tooltip{
+      opacity: 1;
+    }
+
+    .channel-tooltip{
+      position: absolute;
+      bottom: -60px;
+      left: 0px;
+      
+      display: flex;
+      width: 200px;
+      border-radius: 10px;
+      padding: 10px 12px 10px 12px;
+      box-shadow: 0 0 6px rgb(172, 172, 172);
+      z-index: 200;
+      background-color: white;
+
+      transition: opacity 0.15s;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .channel-tooltip-name{
+      font-family: Roboto, Arial;
+      font-weight: bold;
+      margin-top: 3px;
+      margin-left: 8px;
+    }
+
+    .subscribers{
+      font-family: Roboto, Arial;
+      margin-top: 4px;
+      margin-left: 8px;
+      color: rgb(165, 165, 165);
+    }
+
+    .profile-pic{
+      width: 45px;
+      border-radius: 22px;
+    }
+
+    .thumbnail-row{
+      margin-bottom: 8px;
+      position: relative;
+    }
+    .video-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 40px;
+    }
+
+    @media(max-width: 750px){
+      .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+     @media(min-width: 751px) and (max-width: 999px) {
+      .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    @media(min-width: 1000px){
+      .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .video-title{
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .video-author,
+      .video-stats{
+        font-size: 14px;
+      }
+
+    }
+
+    .video-time{
+      font-family: roboto, arial;
+      font-size: 12px;
+      font-weight: 500;
+      padding-left: 3px;
+      padding-right: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-radius: 2px;
+      background-color: black;
+      color: white;
+      position: absolute;
+      bottom: 8px;
+      right: 5px;
+    }
